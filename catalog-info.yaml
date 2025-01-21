@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: fx5ga9h1o-go-gitops
+  description: This is GitOps manifest for fx5ga9h1o-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: fx5ga9h1o-go
+    backstage.io/kubernetes-id: fx5ga9h1o-go 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: fx5ga9h1o-go   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:fx5ga9h1o-go

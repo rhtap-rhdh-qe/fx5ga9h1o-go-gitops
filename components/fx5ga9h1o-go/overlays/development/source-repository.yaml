@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: fx5ga9h1o-go-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/fx5ga9h1o-go
